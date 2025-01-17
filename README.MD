@@ -1,77 +1,92 @@
-# 📚 Gestor de Alumnos SQLite
+# 🐘 Sistema de Gestión de Alumnos - PostgreSQL (Neon)
 
-Sistema de gestión de alumnos simple y efectivo mediante línea de comandos.
+Aplicación CLI para gestionar alumnos usando PostgreSQL serverless con Neon.
 
-## 🎯 ¿Qué puedes hacer?
+## ⚡ Requisitos Previos
 
-1. **Registrar Alumnos** 📝
-   - Nombre completo
-   - Correo electrónico
-   - Carrera que estudia
+1. **Cuenta en Neon.tech**
+   - Crear cuenta en [Neon](https://neon.tech)
+   - Crear un nuevo proyecto
+   - Obtener credenciales de conexión
 
-2. **Consultar Alumnos** 🔍
-   - Ver lista completa de alumnos
-   - Todos los detalles en una vista ordenada
+2. **Dependencias Python**
+```bash
+pip install psycopg2-binary
+```
 
-3. **Actualizar Datos** ✏️
-   - Modificar nombres de alumnos
-   - Actualización simple por ID
+## 🔧 Configuración
 
-4. **Eliminar Registros** 🗑️
-   - Borrar alumnos por ID
-   - Confirmación de eliminación
+Modifica las siguientes variables en `main.py`:
+```python
+DB_HOST = "tu-endpoint.neon.tech"
+DB_PORT = 5432
+DB_NAME = "tu-base-de-datos"
+DB_USER = "tu-usuario"
+DB_PASSWORD = "tu-contraseña"
+```
 
-## 🚀 Como Usar
+## 🚀 Funcionalidades
+
+1. **Gestión de Tabla** 📋
+   - Crear tabla 'alumnos' en Neon
+   - Estructura optimizada para PostgreSQL
+
+2. **Gestión de Alumnos**
+   - ✨ CREATE: Agregar nuevos alumnos
+   - 🔍 READ: Consultar lista de alumnos
+   - 📝 UPDATE: Modificar nombres
+   - 🗑️ DELETE: Eliminar registros
+
+## 📖 Uso Básico
 
 1. **Iniciar el programa:**
 ```bash
 python main.py
 ```
 
-2. **Seleccionar una opción del menú:**
+2. **Menú de Opciones:**
 ```
 =================================
-      📚 MENÚ PRINCIPAL 📚       
+    📚 MENÚ PRINCIPAL (Neon)     
 =================================
-1) Crear base de datos y tabla
+1) Crear tabla 'alumnos'
 2) Insertar registro (CREATE)
 3) Ver registros (READ)
 4) Actualizar registro (UPDATE)
 5) Eliminar registro (DELETE)
 6) Salir
-=================================
 ```
 
-3. **Seguir las instrucciones en pantalla**
+## 📌 Notas Importantes
 
-## 📋 Ejemplo de Uso
+- La conexión es segura mediante SSL (proporcionado por Neon)
+- Persistencia de datos garantizada en la nube
+- Backups automáticos gestionados por Neon
+- Escalabilidad serverless
 
-1. **Para agregar un alumno:**
-   - Selecciona opción 2
-   - Ingresa nombre
-   - Ingresa email
-   - Ingresa carrera
+## ⚠️ Advertencias
 
-2. **Para ver alumnos:**
-   - Selecciona opción 3
-   - Verás la lista completa
+- No uses las credenciales directamente en el código en producción
+- Considera usar variables de entorno
+- Mantén seguros tus datos de conexión
 
-## ⚡ Requisitos
+## 🆘 Solución de Problemas
 
-- Python 3.6 o superior
-- No requiere instalaciones adicionales
+1. **Error de Conexión**
+   - Verifica las credenciales de Neon
+   - Confirma que tu IP esté permitida
+   - Revisa la conexión a internet
 
-## 🆘 Ayuda
+2. **Error en Operaciones**
+   - Verifica los permisos de usuario
+   - Confirma que la tabla existe
+   - Revisa el formato de los datos
 
-Si tienes problemas:
-1. Asegúrate de tener Python instalado
-2. Verifica permisos de escritura en la carpeta
-3. Sigue las instrucciones en pantalla
+## 💡 Tips de Uso
 
-## 💡 Consejos
+- Guarda los IDs de los registros importantes
+- Usa emails únicos para los alumnos
+- Realiza backups periódicos
+- Monitorea el uso en el dashboard de Neon
 
-- Guarda el ID de los alumnos para futuras modificaciones
-- Revisa los datos antes de eliminar registros
-- Mantén respaldos de la base de datos
-
-¡Disfruta gestionando tu lista de alumnos! 🎓
+¡Disfruta de tu aplicación con PostgreSQL en la nube! 🚀
