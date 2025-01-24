@@ -33,6 +33,7 @@ import psycopg2
 import psycopg2.extras
 from datetime import datetime
 
+# Comentario: Reemplazar 'neo' con la URL de la base de datos
 neo =
 
 
