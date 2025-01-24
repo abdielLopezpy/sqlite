@@ -21,7 +21,7 @@ Este proyecto implementa una interfaz de línea de comandos (CLI) para gestionar
 
 1. **¿Cuál es el propósito principal de este script en Python?**
    - [ ] Crear una interfaz gráfica de usuario
-   - [] Establecer una conexión con PostgreSQL y realizar operaciones CRUD vía CLI
+   - [ ] Establecer una conexión con PostgreSQL y realizar operaciones CRUD vía CLI
    - [ ] Desarrollar una aplicación web
    - [ ] Implementar autenticación de usuarios
 
@@ -39,7 +39,7 @@ Este proyecto implementa una interfaz de línea de comandos (CLI) para gestionar
 
 4. **¿Qué hace la función log_operation?**
    - [ ] Inserta registros en alumnos
-   -   Registra operaciones en operaciones_log
+   - [ ] Registra operaciones en operaciones_log
    - [ ] Actualiza cursos
    - [ ] Elimina registros
 
