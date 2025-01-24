@@ -28,24 +28,24 @@ Este proyecto implementa una interfaz de línea de comandos (CLI) para gestionar
 2. **¿Qué biblioteca se utiliza para manejar PostgreSQL?**
    - [ ] sqlite3
    - [ ] sqlalchemy
-   - [] psycopg2
+   - [ ] psycopg2
    - [ ] django.db
 
 3. **¿Cuál tabla NO se crea en la base de datos?**
    - [ ] cursos
    - [ ] alumnos
    - [ ] operaciones_log
-   - [] profesores
+   - [ ] profesores
 
 4. **¿Qué hace la función log_operation?**
    - [ ] Inserta registros en alumnos
-   - [] Registra operaciones en operaciones_log
+   -   Registra operaciones en operaciones_log
    - [ ] Actualiza cursos
    - [ ] Elimina registros
 
 5. **¿Cómo manejar credenciales en producción?**
    - [ ] Definirlas en el código
-   - [] Usar variables de entorno
+   - [ ] Usar variables de entorno
    - [ ] Guardarlas en texto plano
    - [ ] No protegerlas
 
